@@ -1,0 +1,97 @@
+.open-account-section {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+.open-account-section .section-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.open-account-section .section-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.open-account-section .btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.open-account-section .btn-primary {
+    background-color: white;
+    color: #0066cc;
+    border: none;
+}
+
+.open-account-section .btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.open-account-section .btn-outline-primary {
+    color: white;
+    border-color: white;
+    border-width: 2px;
+}
+
+.open-account-section .btn-outline-primary:hover {
+    background-color: white;
+    color: #0066cc;
+    border-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-white-blue {
+    background-color: white !important;
+    color: #0066cc !important;
+    border: none !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.2);
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+}
+
+.btn-white-blue:hover {
+    background-color: white;
+    color: #0066cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.open-account-section .text-muted {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .open-account-section {
+        padding: 60px 0;
+    }
+
+    .open-account-section .section-title {
+        font-size: 1.8rem;
+    }
+
+    .open-account-section .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .open-account-section .btn:last-child {
+        margin-bottom: 0;
+    }
+}

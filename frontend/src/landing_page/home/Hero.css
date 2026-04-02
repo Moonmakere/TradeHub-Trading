@@ -1,0 +1,118 @@
+.hero-section {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: white;
+    padding: 60px 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #070707;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.cta-buttons {
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons .btn-primary {
+    background-color: white;
+    color: #0066cc;
+    border: none;
+}
+
+.cta-buttons .btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cta-buttons .btn-outline-primary {
+    color: white;
+    border-color: white;
+    border-width: 2px;
+}
+
+.cta-buttons .btn-outline-primary:hover {
+    background-color: white;
+    color: #0066cc;
+    border-color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white-blue {
+    background-color: white !important;
+    color: #0066cc !important;
+    border: none !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.2);
+    padding: 8px 20px !important;
+    font-size: 14px !important;
+}
+
+.btn-white-blue:hover {
+    background-color: white;
+    color: #0066cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.hero-image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-placeholder svg {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15));
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0;
+        min-height: auto;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .cta-buttons .btn:last-child {
+        margin-bottom: 0;
+    }
+}

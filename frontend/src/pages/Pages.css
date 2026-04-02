@@ -1,0 +1,1010 @@
+/* Common Page Styles */
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.page-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.deals-text {
+    color: white !important;
+}
+
+/* Products Page */
+.products-page {
+    min-height: 100vh;
+}
+
+.products-hero {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.products-hero .page-title {
+    color: white;
+    text-align: center;
+}
+
+.products-hero .page-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.products-grid {
+    background-color: #f8f9fa;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid #0066cc;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 102, 204, 0.15);
+}
+
+.product-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-description {
+    color: #666;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.product-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.product-features li {
+    color: #555;
+    padding: 8px 0;
+    font-size: 0.9rem;
+}
+
+/* About Page */
+.about-page {
+    min-height: 100vh;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-hero .page-title {
+    color: white;
+    text-align: center;
+}
+
+.about-hero .page-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.company-info {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.company-info h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mission-text,
+.vision-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.team-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.team-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 102, 204, 0.12);
+}
+
+.team-avatar {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.team-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.team-role {
+    color: #0066cc;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.team-bio {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.milestones-section {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background-color: #0066cc;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+    margin-right: 52%;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-right: auto;
+    margin-left: 52%;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #0066cc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    top: 0;
+}
+
+.timeline-content {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.timeline-content p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-marker {
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 70px;
+        margin-right: 0;
+        text-align: left;
+    }
+}
+
+/* Markets Page */
+.markets-page {
+    min-height: 100vh;
+}
+
+.markets-hero {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.markets-hero .page-title {
+    color: white;
+    text-align: center;
+}
+
+.markets-hero .page-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.indices-section {
+    background-color: white;
+    padding: 80px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.index-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f0ff 100%);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    border-left: 4px solid #0066cc;
+    transition: all 0.3s ease;
+}
+
+.index-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 102, 204, 0.12);
+}
+
+.index-card h5 {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.deals-text {
+    color: white;
+}
+
+.index-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.index-change {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.index-change.positive {
+    color: #10b981;
+}
+
+.index-change.negative {
+    color: #ef4444;
+}
+
+.market-data-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.tab-navigation {
+    display: flex;
+    gap: 15px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-btn:hover {
+    color: #0066cc;
+}
+
+.tab-btn.active {
+    color: #0066cc;
+    border-bottom-color: #0066cc;
+}
+
+.market-table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.market-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.market-table th {
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.market-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+}
+
+.market-table tr:hover {
+    background-color: #fafafa;
+}
+
+.market-table .symbol {
+    font-weight: 600;
+    color: #0066cc;
+}
+
+.market-table .price {
+    font-weight: 600;
+    color: #333;
+}
+
+.market-table .change.positive {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.market-table .change.negative {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.sectors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.sector-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #0066cc;
+}
+
+.sector-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 102, 204, 0.12);
+}
+
+.sector-card h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sector-companies {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.sector-change {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.sector-change.positive {
+    color: #10b981;
+}
+
+.sector-change.negative {
+    color: #ef4444;
+}
+
+/* Signup Page */
+.signup-page {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.signup-hero {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.signup-hero .page-title {
+    color: white;
+    text-align: center;
+}
+
+.signup-hero .page-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.signup-form-section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.signup-form {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form .form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.signup-form .form-control,
+.signup-form .form-select {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.signup-form .form-control:focus,
+.signup-form .form-select:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
+
+.signup-form .form-check-label {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.signup-form .form-check-input:checked {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.success-message {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border-radius: 12px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.success-message h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.success-message p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+}
+
+.login-link {
+    color: #666;
+}
+
+.login-link a {
+    color: #0066cc;
+    font-weight: 600;
+}
+
+.signup-benefits {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.benefit-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 102, 204, 0.12);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.benefit-card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.benefit-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Support Page */
+.support-page {
+    min-height: 100vh;
+}
+
+.support-hero {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.support-hero .page-title {
+    color: white;
+    text-align: center;
+}
+
+.support-hero .page-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.support-channels {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.channel-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f0ff 100%);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid #0066cc;
+}
+
+.channel-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 102, 204, 0.12);
+}
+
+.channel-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.channel-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.channel-value {
+    color: #0066cc;
+    font-weight: 600;
+}
+
+.faq-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: #f0f0f0;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+.faq-question h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.faq-answer {
+    padding: 20px;
+    display: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #555;
+}
+
+.support-cta {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Login Page */
+.login-page {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.login-hero {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.login-hero .page-title {
+    color: white;
+    text-align: center;
+}
+
+.login-hero .page-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+.login-form-section {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.login-links {
+    font-size: 0.9rem;
+}
+
+.login-links p {
+    margin: 0;
+}
+
+.login-links a {
+    color: #0066cc;
+    font-weight: 600;
+}
+
+.login-security {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.security-feature {
+    padding: 30px;
+}
+
+.security-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.security-feature h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.security-feature p {
+    color: #666;
+}
+
+/* Dashboard Page */
+.dashboard-page {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.dashboard-header {
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 30px 0;
+}
+
+.dashboard-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    text-align: left;
+}
+
+.dashboard-subtitle {
+    color: #666;
+    margin: 5px 0 0 0;
+    text-align: left;
+}
+
+.dashboard-stats {
+    padding: 40px 0;
+}
+
+.stat-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #0066cc;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 102, 204, 0.12);
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.stat-change {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.stat-change.positive {
+    color: #10b981;
+}
+
+.stat-change.negative {
+    color: #ef4444;
+}
+
+.stat-change.neutral {
+    color: #0066cc;
+}
+
+.dashboard-content {
+    padding: 40px 0;
+}
+
+.sheet {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.sheet-header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sheet-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.holdings-table,
+.trades-table {
+    padding: 20px;
+}
+
+.holdings-table table,
+.trades-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.holdings-table th,
+.trades-table th {
+    background-color: #f8f9fa;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.holdings-table td,
+.trades-table td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555;
+}
+
+.holdings-table tr:hover,
+.trades-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.holdings-table .symbol,
+.trades-table .symbol {
+    font-weight: 600;
+    color: #0066cc;
+}
+
+.holdings-table .value,
+.trades-table .value {
+    font-weight: 600;
+    color: #333;
+}
+
+.action-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.action-badge.buy {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.action-badge.sell {
+    background-color: #fee2e2;
+    color: #7f1d1d;
+}
+
+.quick-actions {
+    padding: 20px;
+}
+
+.action-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.action-btn:hover {
+    background-color: #0066cc;
+    color: white;
+    transform: translateX(5px);
+}
+
+.action-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .product-card,
+    .team-card,
+    .index-card,
+    .sector-card,
+    .benefit-card,
+    .channel-card {
+        transform: none !important;
+    }
+
+    .market-table {
+        overflow-x: auto;
+    }
+
+    .signup-form,
+    .sheet {
+        padding: 20px;
+    }
+
+    .dashboard-title {
+        font-size: 1.5rem;
+    }
+
+    .stat-box {
+        margin-bottom: 15px;
+    }
+
+    .sheet-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

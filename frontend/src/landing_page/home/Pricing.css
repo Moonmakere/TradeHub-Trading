@@ -1,0 +1,97 @@
+.pricing-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.pricing-intro {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid #e0e0e0;
+    position: relative;
+}
+
+.pricing-card.highlighted {
+    border-top-color: #0066cc;
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 102, 204, 0.2);
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-card.highlighted:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+.pricing-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.pricing-fee {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0066cc;
+    margin-bottom: 30px;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.95rem;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-card .btn {
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.pricing-card .btn-primary {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.pricing-card .btn-primary:hover {
+    background-color: #0052a3;
+    border-color: #0052a3;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .pricing-section {
+        padding: 60px 0;
+    }
+
+    .pricing-card.highlighted {
+        transform: scale(1);
+    }
+
+    .pricing-card.highlighted:hover {
+        transform: translateY(-8px);
+    }
+}
