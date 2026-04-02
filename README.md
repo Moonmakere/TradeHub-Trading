@@ -94,33 +94,10 @@ http://localhost:5000/api
 ### Main API Routes
 
 **Authentication**
-- `POST /auth/register` - User registration
-- `POST /auth/login` - User login
-- `GET /auth/profile` - Get profile (protected)
-- `PUT /auth/profile` - Update profile (protected)
-
 **Stocks**
-- `GET /stocks` - All stocks
-- `GET /stocks/search?query=` - Search stocks
-- `GET /stocks/:symbol` - Stock details
-- `POST /stocks/add` - Add/update stock (admin)
-
 **Watchlist** (Protected)
-- `GET /watchlist` - Get watchlist
-- `POST /watchlist/add` - Add to watchlist
-- `DELETE /watchlist/:symbol` - Remove from watchlist
-
 **Portfolio** (Protected)
-- `GET /portfolio` - Get portfolio
-- `POST /portfolio/add` - Add holding
-- `PUT /portfolio/:symbol` - Update holding
-- `DELETE /portfolio/:symbol` - Remove holding
-
 **Orders** (Protected)
-- `GET /orders` - Get orders
-- `POST /orders/create` - Create order
-- `GET /orders/history` - Order history with filters
-- `PATCH /orders/:id/cancel` - Cancel order
 
 ## 🗄️ Database Schema
 
@@ -169,22 +146,6 @@ http://localhost:5000/api
 - **axios** - HTTP client
 - **react-scripts** - Build tool
 
-## 🔧 Environment Configuration
-
-### Backend (.env)
-```
-PORT=5000
-MONGODB_URI=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/zerodha
-JWT_SECRET=your_secret_key
-JWT_EXPIRE=7d
-NODE_ENV=development
-```
-
-### Frontend (.env)
-```
-REACT_APP_API_URL=http://localhost:5000/api
-```
-
 ## 📝 Development Workflow
 
 1. **Start Backend**: `cd Backend && npm run dev`
@@ -207,14 +168,10 @@ REACT_APP_API_URL=http://localhost:5000/api
 ## 🚧 Future Enhancements
 
 - [ ] Real-time stock prices (WebSockets)
-- [ ] Email verification
 - [ ] Two-factor authentication
 - [ ] Advanced charting
 - [ ] Transaction history
-- [ ] Dividend tracking
 - [ ] Admin dashboard
-- [ ] Mobile app
-- [ ] Deployment setup
 
 ## 📚 Documentation
 
@@ -247,14 +204,6 @@ api.post('/orders/create', { symbol: 'INFY', quantity: 5, price: 1500, orderType
 2. Login at `/api/auth/login` - saves token
 3. Use token for protected routes
 
-## 🐛 Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| Backend won't start | Check MongoDB URI in .env |
-| CORS errors | Ensure frontend proxy is set in package.json |
-| API calls fail | Verify token is included in Authorization header |
-| Port already in use | Kill process on port 5000: `lsof -ti:5000 \| xargs kill -9` |
 
 ## 📄 License
 
