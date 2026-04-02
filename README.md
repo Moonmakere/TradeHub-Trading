@@ -1,7 +1,7 @@
 # TradeHub - Online trading platform to invest in Everything...
 
 A full-stack inspired by Zerodha trading platform built with the MERN stack (MongoDB, Express, React, Node.js).
-# Some Glipmses of website ppages
+## Some Glipmses of website pages
 <img width="1907" height="917" alt="image" src="https://github.com/user-attachments/assets/16eca54e-756a-4274-beea-0437e3c69481" />
 <img width="1900" height="916" alt="image" src="https://github.com/user-attachments/assets/792d256c-d1c8-4659-baf9-cca6575a7328" />
 <img width="1852" height="897" alt="image" src="https://github.com/user-attachments/assets/4cbbf342-2d45-48f1-879c-75f30587b881" />
